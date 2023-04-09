@@ -1,5 +1,10 @@
 import React from "react";
 import Tesla from "../assets/All_images/tesla.png";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {
+  faCircleDollarToSlot,
+  faLocationDot,
+} from "@fortawesome/free-solid-svg-icons";
 
 const FeaturedCard = () => {
   return (
@@ -24,9 +29,21 @@ const FeaturedCard = () => {
           Full Time
         </button>
       </div>
-      <div className="flex gap-6 text-gray-400 justify-center md:justify-start mb-4">
-        <p>Dhaka, Bangladesh</p>
-        <p>Salary : 100K - 150K</p>
+      <div className="md:flex gap-6 text-gray-400 justify-center md:justify-start mb-4">
+        <p>
+          <span>
+            <FontAwesomeIcon icon={faLocationDot} />
+          </span>{" "}
+          Dhaka, Bangladesh
+        </p>
+        <p>
+          <span>
+            <span>
+              <FontAwesomeIcon icon={faCircleDollarToSlot} />
+            </span>
+          </span>{" "}
+          Salary : 100K - 150K
+        </p>
       </div>
       <button
         type="button"
