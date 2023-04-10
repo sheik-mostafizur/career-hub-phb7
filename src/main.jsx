@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Job from "./components/Job";
 import AppliedJob from "./components/AppliedJob";
+import AppliedJobBanner from "./components/AppliedJobBanner";
 
 const router = createBrowserRouter([
   {
@@ -18,16 +19,21 @@ const router = createBrowserRouter([
     children: [
       {path: "/", element: <Home></Home>},
       {path: "/applied-job", element: <AppliedJob></AppliedJob>},
-      {path: "/job"},
       {
-        path: "/job/:id",
-        element: <Job></Job>,
-        loader: async ({params}) => {
-          const featuredJob = await fetch("featured_job.json");
-          let jobData = await featuredJob.json();
-          jobData = jobData.find((data) => data.id === params.id);
-          return {jobData};
-        },
+        path: "/job",
+        element: <AppliedJobBanner />,
+        children: [
+          {
+            path: "/job/:id",
+            element: <Job></Job>,
+            loader: async ({params}) => {
+              const featuredJob = await fetch("featured_job.json");
+              let jobData = await featuredJob.json();
+              jobData = jobData.find((data) => data.id === params.id);
+              return {jobData};
+            },
+          },
+        ],
       },
     ],
   },
