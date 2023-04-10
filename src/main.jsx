@@ -9,7 +9,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Job from "./components/Job";
 import AppliedJob from "./components/AppliedJob";
-import AppliedJobBanner from "./components/AppliedJobBanner";
+import JobBanner from "./components/JobBanner";
 
 const router = createBrowserRouter([
   {
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
       {path: "/applied-job", element: <AppliedJob></AppliedJob>},
       {
         path: "/job",
-        element: <AppliedJobBanner />,
+        element: <JobBanner />,
         children: [
           {
             path: "/job/:id",

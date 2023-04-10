@@ -1,13 +1,15 @@
 import React from "react";
+import {Outlet} from "react-router-dom";
 
-const AppliedJobBanner = () => {
+const JobBanner = () => {
   return (
     <div>
       <h1 className="font-bold text-4xl text-center pt-10 pb-20 bg-blue-50">
-        Applied Jobs
+        Job Details
       </h1>
+      <Outlet />
     </div>
   );
 };
 
-export default AppliedJobBanner;
+export default JobBanner;
