@@ -1,4 +1,3 @@
-import React, {useEffect, useState} from "react";
 import Header from "./Header";
 import Category from "./Category";
 import Featured from "./Featured";
@@ -6,7 +5,7 @@ import Featured from "./Featured";
 const Home = () => {
   return (
     <div>
-      <div className="mt-8">
+      <div className="pt-8 bg-blue-50">
         <Header />
       </div>
       <Category></Category>
