@@ -8,6 +8,7 @@ import ErrorPage from "./components/ErrorPage";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Job from "./components/Job";
+import AppliedJob from "./components/AppliedJob";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {path: "/", element: <Home></Home>},
+      {path: "/applied-job", element: <AppliedJob></AppliedJob>},
       {path: "/job"},
       {
         path: "/job/:id",

@@ -1,5 +1,4 @@
 import React from "react";
-import Tesla from "../assets/All_images/tesla.png";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {
   faCircleDollarToSlot,

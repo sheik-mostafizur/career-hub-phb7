@@ -55,7 +55,7 @@ const Job = () => {
         <div className="bg-blue-50 p-8 space-y-4">
           <div>
             <h3 className="font-bold text-2xl">{job_title}</h3>
-            <hr class="h-px mt-2 mb-4 bg-gray-200 border-0 dark:bg-gray-700"></hr>
+            <hr className="h-px mt-2 mb-4 bg-gray-200 border-0 dark:bg-gray-700"></hr>
             <p>
               <FontAwesomeIcon
                 className="text-violet-600"
@@ -75,7 +75,7 @@ const Job = () => {
           </div>
           <div>
             <h3 className="font-bold text-2xl">Contact Information</h3>
-            <hr class="h-px mt-2 mb-4 bg-gray-200 border-0 dark:bg-gray-700"></hr>
+            <hr className="h-px mt-2 mb-4 bg-gray-200 border-0 dark:bg-gray-700"></hr>
             <p>
               <FontAwesomeIcon className="text-violet-600" icon={faPhone} />
               <b> Phone: </b>
@@ -97,7 +97,7 @@ const Job = () => {
           </div>
           <button
             type="button"
-            class="w-full px-5 py-3 text-base font-bold text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            className="w-full px-5 py-3 text-base font-bold text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
             Apply Now
           </button>
         </div>
