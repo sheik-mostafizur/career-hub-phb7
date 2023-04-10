@@ -6,7 +6,7 @@ const Header = () => {
     <div className="max-w-screen-xl mx-auto px-4">
       <div className="grid md:grid-cols-2 md:items-center">
         <div className="space-y-8">
-          <h1 className="text-5xl md:text-7xl font-bold">
+          <h1 className="text-4xl md:text-7xl font-bold">
             One Step <br />
             Closer To Your
             <span className="text-blue-500">Dream Job</span>

@@ -1,16 +1,12 @@
 import React from "react";
-import Account from "../assets/Icons/accounts.png";
 
-const CategoryCard = () => {
+const CategoryCard = ({category}) => {
+  const {category_img, title, job_available} = category;
   return (
     <div className="bg-blue-50 p-10 rounded text-center md:text-left">
-      <img
-        className="mb-6 mx-auto md:mx-0"
-        src={Account}
-        alt="alternative text"
-      />
-      <h3 className="font-bold text-xl">Account & Finance</h3>
-      <p className="text-gray-400">300 Jobs Available</p>
+      <img className="mb-6 mx-auto md:mx-0" src={category_img} alt={title} />
+      <h3 className="font-bold text-xl">{title}</h3>
+      <p className="text-gray-400">{job_available}</p>
     </div>
   );
 };

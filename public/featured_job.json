@@ -1,0 +1,110 @@
+[
+  {
+    "id": "001",
+    "company_logo": "https://example.com/logo.png",
+    "job_title": "Software Engineer",
+    "company_name": "Acme Corporation",
+    "remote_or_onsite": "Remote",
+    "location": "Anywhere",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$100,000 - $150,000",
+    "job_description": "Acme Corporation is seeking an experienced software engineer to join our team. The ideal candidate will have a strong background in software development and be able to work independently as well as in a team environment.",
+    "job_responsibility": "Responsibilities include designing, developing, and testing software applications, as well as participating in code reviews and providing feedback to team members. The software engineer will also be responsible for troubleshooting and resolving software defects and working with other team members to identify and implement process improvements.",
+    "educational_requirements": "Bachelor's degree in Computer Science, Computer Engineering, or a related field",
+    "experiences": "Minimum of 5 years of experience in software development",
+    "contact_information": {
+      "phone": "555-1234",
+      "email": "jobs@acme.com"
+    }
+  },
+  {
+    "id": "002",
+    "company_logo": "https://example.com/logo.png",
+    "job_title": "Marketing Manager",
+    "company_name": "XYZ Inc.",
+    "remote_or_onsite": "Onsite",
+    "location": "New York, NY",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$80,000 - $100,000",
+    "job_description": "XYZ Inc. is seeking a talented Marketing Manager to lead our marketing efforts. The ideal candidate will have a strong background in marketing and be able to develop and implement successful marketing strategies.",
+    "job_responsibility": "Responsibilities include developing and executing marketing campaigns, managing social media accounts, creating and editing marketing materials, and analyzing market trends and consumer behavior. The Marketing Manager will also be responsible for managing a team of marketing professionals and collaborating with other departments to ensure marketing goals are met.",
+    "educational_requirements": "Bachelor's degree in Marketing, Communications, or a related field",
+    "experiences": "Minimum of 7 years of experience in marketing",
+    "contact_information": {
+      "phone": "555-5678",
+      "email": "jobs@xyzinc.com"
+    }
+  },
+  {
+    "id": "003",
+    "company_logo": "https://example.com/logo.png",
+    "job_title": "Graphic Designer",
+    "company_name": "ABC Agency",
+    "remote_or_onsite": "Onsite",
+    "location": "Los Angeles, CA",
+    "fulltime_or_parttime": "Part-time",
+    "salary": "$30 - $50 per hour",
+    "job_description": "ABC Agency is seeking a talented Graphic Designer to join our team. The ideal candidate will have a strong background in graphic design and be able to work on a variety of projects, including print and digital media.",
+    "job_responsibility": "Responsibilities include creating and designing visual materials for various projects, such as websites, brochures, and logos. The Graphic Designer will also be responsible for working with clients to understand their needs and preferences, and collaborating with other team members to ensure timely and high-quality deliverables.",
+    "educational_requirements": "Bachelor's degree in Graphic Design or a related field",
+    "experiences": "Minimum of 3 years of experience in data analysis",
+    "contact_information": {
+      "phone": "555-7890",
+      "email": "jobs@dataworks.com"
+    }
+  },
+  {
+    "id": "004",
+    "company_logo": "https://example.com/logo.png",
+    "job_title": "Data Analyst",
+    "company_name": "DataWorks Inc.",
+    "remote_or_onsite": "Onsite",
+    "location": "San Francisco, CA",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$90,000 - $120,000",
+    "job_description": "DataWorks Inc. is seeking a talented Data Analyst to join our team. The ideal candidate will have a strong background in data analysis and be able to work with large datasets to extract meaningful insights.",
+    "job_responsibility": "Responsibilities include collecting and analyzing data, creating and maintaining data visualizations, and presenting findings to stakeholders. The Data Analyst will also be responsible for identifying opportunities for process improvements and working with other team members to implement solutions.",
+    "educational_requirements": "Bachelor's degree in Statistics, Mathematics, Computer Science, or a related field",
+    "experiences": "Minimum of 3 years of experience in data analysis",
+    "contact_information": {
+      "phone": "555-7890",
+      "email": "jobs@dataworks.com"
+    }
+  },
+  {
+    "id": "005",
+    "company_logo": "https://example.com/logo.png",
+    "job_title": "Product Manager",
+    "company_name": "Innovate Co.",
+    "remote_or_onsite": "Remote",
+    "location": "Anywhere",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$120,000 - $150,000",
+    "job_description": "Innovate Co. is seeking a skilled Product Manager to oversee the development and launch of new products. The ideal candidate will have a strong background in product management and be able to work with cross-functional teams to ensure successful product launches.",
+    "job_responsibility": "Responsibilities include conducting market research, defining product requirements, creating product roadmaps, and collaborating with engineering and design teams to develop and launch new products. The Product Manager will also be responsible for analyzing product performance and identifying opportunities for improvement.",
+    "educational_requirements": "Bachelor's degree in Business, Engineering, or a related field",
+    "experiences": "Minimum of 5 years of experience in product management",
+    "contact_information": {
+      "phone": "555-4321",
+      "email": "jobs@innovateco.com"
+    }
+  },
+  {
+    "id": "006",
+    "company_logo": "https://example.com/logo.png",
+    "job_title": "Sales Representative",
+    "company_name": "Global Sales Inc.",
+    "remote_or_onsite": "Onsite",
+    "location": "Chicago, IL",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$60,000 - $80,000",
+    "job_description": "Global Sales Inc. is seeking a motivated Sales Representative to help grow our business. The ideal candidate will have a strong background in sales and be able to develop and maintain relationships with clients.",
+    "job_responsibility": "Responsibilities include identifying potential clients, presenting products and services to clients, negotiating contracts and agreements, and maintaining client relationships. The Sales Representative will also be responsible for analyzing sales data and identifying opportunities for growth.",
+    "educational_requirements": "Bachelor's degree in Business, Marketing, or a related field",
+    "experiences": "Minimum of 2 years of experience in sales",
+    "contact_information": {
+      "phone": "555-1234",
+      "email": "jobs@acme.com"
+    }
+  }
+]
