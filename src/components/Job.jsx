@@ -8,6 +8,7 @@ import {
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {useLoaderData} from "react-router-dom";
 import toast, {Toaster} from "react-hot-toast";
+import {addToDb, getShoppingCart} from "../utilities/fakedb";
 
 const Job = () => {
   const {jobData} = useLoaderData();
@@ -25,20 +26,19 @@ const Job = () => {
     contact_information,
   } = jobData;
 
-  const getAppliedData = () => {
-    const localSDB = localStorage.getItem("applied-job");
-    return localSDB ? JSON.parse(localSDB) : [];
-  };
   const notify = () => toast.error("You have already applied!");
   const handleApply = (id) => {
-    const appliedData = getAppliedData();
-    const isExit = appliedData.find((data) => data.hasOwnProperty(id));
-    console.log(appliedData);
-    if (!isExit) {
-      appliedData.push({[id]: 1});
-      localStorage.setItem("applied-job", JSON.stringify(appliedData));
+    const appliedData = getShoppingCart();
+    if (Object.keys(appliedData).length !== 0) {
+      for (const appliedId in appliedData) {
+        if (appliedId !== id) {
+          addToDb(id);
+        } else {
+          notify();
+        }
+      }
     } else {
-      notify();
+      addToDb(id);
     }
   };
 
