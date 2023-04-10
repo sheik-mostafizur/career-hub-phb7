@@ -6,19 +6,19 @@
     "job_available": "300 Jobs Available"
   },
   {
-    "id": "01",
+    "id": "02",
     "category_img": "../src/assets/Icons/business.png",
     "title": "Creative Design",
     "job_available": "100+ Jobs Available"
   },
   {
-    "id": "01",
+    "id": "03",
     "category_img": "../src/assets/Icons/social-media.png",
     "title": "Marketing & Sales",
     "job_available": "150 Jobs Available"
   },
   {
-    "id": "01",
+    "id": "04",
     "category_img": "../src/assets/Icons/chip.png",
     "title": "Engineering Job",
     "job_available": "224 Jobs Available"

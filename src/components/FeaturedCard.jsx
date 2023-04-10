@@ -6,35 +6,40 @@ import {
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
 
-const FeaturedCard = () => {
+const FeaturedCard = ({featured}) => {
+  const {
+    company_logo,
+    company_name,
+    job_title,
+    fulltime_or_parttime,
+    location,
+    salary,
+  } = featured;
   return (
     <div className="border rounded p-10 text-center md:text-left">
       <img
-        className="mb-6 mx-auto md:mx-0"
-        src={Tesla}
-        alt="alternative text"
+        className="mb-6 mx-auto md:mx-0 max-w-[200px]"
+        src={company_logo}
+        alt={company_name}
       />
-      <h3 className="font-bold text-xl">Software Engineer</h3>
-      <p className="text-gray-400">Tesla</p>
+      <h3 className="font-bold text-xl">{job_title}</h3>
+      <p className="text-gray-400">{company_name}</p>
       <div className="flex gap-6 mt-3 justify-center md:justify-start">
-        <button
-          type="button"
-          className="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800">
-          Remote
-        </button>
-
-        <button
-          type="button"
-          className="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800">
-          Full Time
-        </button>
+        {fulltime_or_parttime.map((time) => (
+          <button
+            key={time}
+            type="button"
+            className="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800">
+            {time}
+          </button>
+        ))}
       </div>
       <div className="md:flex gap-6 text-gray-400 justify-center md:justify-start mb-4">
         <p>
           <span>
             <FontAwesomeIcon icon={faLocationDot} />
           </span>{" "}
-          Dhaka, Bangladesh
+          {location}
         </p>
         <p>
           <span>
@@ -42,7 +47,7 @@ const FeaturedCard = () => {
               <FontAwesomeIcon icon={faCircleDollarToSlot} />
             </span>
           </span>{" "}
-          Salary : 100K - 150K
+          Salary : {salary}
         </p>
       </div>
       <button
