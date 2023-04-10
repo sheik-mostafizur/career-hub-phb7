@@ -6,18 +6,17 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import React from "react";
 import {useLoaderData} from "react-router-dom";
+import toast, {Toaster} from "react-hot-toast";
 
 const Job = () => {
   const {jobData} = useLoaderData();
   const {
+    id,
     company_logo,
     job_title,
     company_name,
-    remote_or_onsite,
     location,
-    fulltime_or_parttime,
     salary,
     job_description,
     job_responsibility,
@@ -25,8 +24,27 @@ const Job = () => {
     experiences,
     contact_information,
   } = jobData;
+
+  const getAppliedData = () => {
+    const localSDB = localStorage.getItem("applied-job");
+    return localSDB ? JSON.parse(localSDB) : [];
+  };
+  const notify = () => toast.error("You have already applied!");
+  const handleApply = (id) => {
+    const appliedData = getAppliedData();
+    const isExit = appliedData.find((data) => data.hasOwnProperty(id));
+    console.log(appliedData);
+    if (!isExit) {
+      appliedData.push({[id]: 1});
+      localStorage.setItem("applied-job", JSON.stringify(appliedData));
+    } else {
+      notify();
+    }
+  };
+
   return (
     <div className="max-w-screen-xl mx-auto my-24 px-4">
+      <Toaster />
       <div className="grid md:grid-cols-3 gap-6">
         <div className="md:col-span-2">
           <img
@@ -96,6 +114,7 @@ const Job = () => {
             </p>
           </div>
           <button
+            onClick={() => handleApply(id)}
             type="button"
             className="w-full px-5 py-3 text-base font-bold text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
             Apply Now
