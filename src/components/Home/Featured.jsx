@@ -4,12 +4,16 @@ import FeaturedCard from "../FeaturedCard";
 const Featured = () => {
   const [featuredData, setFeaturedData] = useState([]);
   const [showAll, setShowAll] = useState(false);
+  const [isShowAll, setIsShowAll] = useState([]);
 
   useEffect(() => {
     const URL = "featured_job.json";
     fetch(URL)
       .then((res) => res.json())
-      .then((data) => setFeaturedData(data));
+      .then((data) => {
+        setFeaturedData(data);
+        setIsShowAll(data.slice(0, 4));
+      });
   }, []);
 
   return (
@@ -22,16 +26,17 @@ const Featured = () => {
         </p>
       </div>
       <div className="grid gap-6 md:grid-cols-2">
-        {featuredData
-          .slice(0, showAll ? featuredData.length : 4)
-          .map((featured) => (
-            <FeaturedCard key={featured.id} featured={featured}></FeaturedCard>
-          ))}
+        {isShowAll.map((featured) => (
+          <FeaturedCard key={featured.id} featured={featured}></FeaturedCard>
+        ))}
       </div>
 
       {showAll || (
         <button
-          onClick={() => setShowAll(true)}
+          onClick={() => {
+            setIsShowAll(featuredData);
+            setShowAll(true);
+          }}
           type="button"
           className="mt-12 mx-auto block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-base px-6 py-3.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
           See All Jobs
