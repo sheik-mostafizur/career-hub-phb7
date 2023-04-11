@@ -2,6 +2,8 @@
 
 
  
+**Live Link:** [click me](https://quickjob-ph7.netlify.app/)
+
 **Source Link:** [click me](https://github.com/Porgramming-Hero-web-course/b7a9-career-hub-sheik-mostafizur.git)
 
 

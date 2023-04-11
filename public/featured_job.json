@@ -1,7 +1,7 @@
 [
   {
     "id": "001",
-    "company_logo": "../src/assets/FeaturedLogo/google.png",
+    "company_logo": "./FeaturedLogo/google.png",
     "job_title": "Software Engineer",
     "company_name": "Acme Corporation",
     "remote_or_onsite": "Remote",
@@ -19,7 +19,7 @@
   },
   {
     "id": "002",
-    "company_logo": "../src/assets/FeaturedLogo/netflix.png",
+    "company_logo": "./FeaturedLogo/netflix.png",
     "job_title": "Marketing Manager",
     "company_name": "XYZ Inc.",
     "remote_or_onsite": "Onsite",
@@ -37,7 +37,7 @@
   },
   {
     "id": "003",
-    "company_logo": "../src/assets/FeaturedLogo/tesla.png",
+    "company_logo": "./FeaturedLogo/tesla.png",
     "job_title": "Graphic Designer",
     "company_name": "ABC Agency",
     "remote_or_onsite": "Remote",
@@ -55,7 +55,7 @@
   },
   {
     "id": "004",
-    "company_logo": "../src/assets/FeaturedLogo/amazon.png",
+    "company_logo": "./FeaturedLogo/amazon.png",
     "job_title": "Data Analyst",
     "company_name": "DataWorks Inc.",
     "remote_or_onsite": "Onsite",
@@ -73,7 +73,7 @@
   },
   {
     "id": "005",
-    "company_logo": "../src/assets/FeaturedLogo/Microsoft_logo.png",
+    "company_logo": "./FeaturedLogo/Microsoft_logo.png",
     "job_title": "Product Manager",
     "company_name": "Innovate Co.",
     "remote_or_onsite": "Remote",
@@ -91,7 +91,7 @@
   },
   {
     "id": "006",
-    "company_logo": "../src/assets/FeaturedLogo/apple.png",
+    "company_logo": "./FeaturedLogo/apple.png",
     "job_title": "Sales Representative",
     "company_name": "Global Sales Inc.",
     "remote_or_onsite": "Onsite",
